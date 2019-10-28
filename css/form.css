@@ -1,0 +1,169 @@
+/*
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AKAI Frontend Task - CSS
+
+    Spróbuj zmodyfikować poniższy plik ze stylami tak, by upiększyć formularz na stronie.
+    Jako inspiracji możesz skorzystać z szablonu znajdującego się w pliku img/layout.png
+    Nie wymagamy, by wykonać identyczny layout. Liczy się kreatywność.
+
+    Przy wykonywaniu zadania można zmienić strukturę pliku index.html.
+    Pamiętaj, że w takim wypadku będzie trzeba zadbać o dostosowanie odpowiednich selektorów.
+
+    Jeśli korzystasz z preprocessorów takich jak Sass/Less, również możesz się tym pochwalić.
+
+    Powodzenia!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+body {
+
+  font-family: 'Raleway', sans-serif;
+  color: rgb(74, 59, 125);
+  font-size: 0.8em;
+  display: flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+}
+#blurredBackgroundContainer{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:block;
+  overflow:hidden;
+}
+#blurredBackground{
+  position:absolute;
+  top:-5%;
+  left:-5%;
+  display:block;
+  min-width:110%;
+  min-height:110%;
+  filter:blur(50px);
+  -webkit-filter:blur(50px);
+}
+.contentContainer{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:block;
+  overflow:scroll;
+}
+.color-blur
+{
+  width:200%;
+  height:150%;
+  display:block;
+  position:absolute;
+  border-radius:50%;
+}
+#task-frontend {
+  background-color: rgba(255, 255, 255, 0.8);
+  mix-blend-mode: hard-light;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center; 
+
+  border-radius: 26px 26px 26px 26px;
+  -moz-border-radius: 26px 26px 26px 26px;
+  -webkit-border-radius: 26px 26px 26px 26px;
+  border: 0px solid #000000;
+
+  -webkit-box-shadow: 1px 3px 8px -4px rgba(0,0,0,0.8);
+  -moz-box-shadow: 1px 3px 8px -4px rgba(0,0,0,0.8);
+  box-shadow: 1px 3px 8px -4px rgba(0,0,0,0.8);
+}
+
+form {
+  margin: auto 40px;
+}
+
+svg { 
+  height: 3.3em;
+  width: 3.3em;
+}
+
+svg path {
+  fill: currentColor;
+}
+
+#task-frontend .basic-title {
+  font-size: 150%;
+}
+
+#task-frontend input[type="text"], #task-frontend input[type="email"] {
+  font-family: 'Raleway', sans-serif;
+  font-size: 110%;
+  display: block;
+  margin: 10px auto;
+  width: 210px;
+  height: 30px;
+  padding: 0.3em;
+  padding-left: 1.2em;
+  
+  border-radius: 26px 26px 26px 26px;
+  -moz-border-radius: 26px 26px 26px 26px;
+  -webkit-border-radius: 26px 26px 26px 26px;
+  border: 0px solid #000000;
+
+  -webkit-box-shadow: inset 2px 2px 10px -4px rgba(110,110,110,1);
+  -moz-box-shadow: inset 2px 2px 10px -4px rgba(110,110,110,1);
+  box-shadow: inset 2px 2px 10px -4px rgba(110,110,110,1);
+}
+
+::placeholder {
+  color: rgb(69,69,69,0.3);
+
+}
+
+#task-frontend span {
+  display: block;
+}
+
+.row {
+  margin-bottom: 2em;
+}
+
+.column {
+  float: left;
+  width: 42%;
+  text-align: left;
+  padding-left: 8%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#task-frontend input[type="submit"] {
+	color: white;
+  font-family: 'Raleway', sans-serif;
+  background: rgba(74, 59, 125,1);
+  padding: 0.7em 3.5em;
+	text-align: center;
+
+  border-radius: 26px 26px 26px 26px;
+  -moz-border-radius: 26px 26px 26px 26px;
+  -webkit-border-radius: 26px 26px 26px 26px;
+  border: 0px solid #000000;
+  
+  -webkit-box-shadow: 1px 3px 8px -4px rgba(0,0,0,0.8);
+  -moz-box-shadow: 1px 3px 8px -4px rgba(0,0,0,0.8);
+  box-shadow: 1px 3px 8px -4px rgba(0,0,0,0.8);
+
+}
